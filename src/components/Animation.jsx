@@ -32,7 +32,7 @@ export const FadeLeft = (delay) => {
   }
 }
 
-export const FadeRigth = (delay) => {
+export const FadeRight = (delay) => {
   return {
     hidden: {
       opacity: 0,
