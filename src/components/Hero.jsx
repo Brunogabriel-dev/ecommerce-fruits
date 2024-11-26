@@ -2,11 +2,12 @@ import React from "react"
 import { IoBagHandleOutline } from "react-icons/io5"
 import HeroPng from "../../assets/fruit-plate.png"
 import LeafPng from "../../assets/leaf.png"
+import { motion } from "framer-motion"
 
 const Hero = () => {
   return (
     <section>
-      <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[650px]">
+      <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[650px] relative">
         {/* Brand Info */}
         <div className="flex flex-col justify-center py-14 md:py-0 relative z-10">
           <div className="text-center md:text-left space-y-6 lg:max-w-[400px]">
@@ -35,10 +36,16 @@ const Hero = () => {
         </div>
         {/* Hero Images */}
         <div className="flex justify-center items-center">
-          <img src={HeroPng} alt="" className="w-[350px]
+          <img 
+          src={HeroPng} 
+          alt="" 
+          className="w-[350px]
           md:w-[550px] drop-shadow"/>
         </div>
-
+        {/* Leaf Image */}
+        <div className="absolute top-14 md:top-0 right-1/2 blur-sm opacity-80 rotate-[40deg]">
+          <img src={LeafPng} alt="" className="w-full md:max-w-[300px]"/>
+        </div>
 
       </div>
     </section>
