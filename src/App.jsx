@@ -2,6 +2,7 @@ import React from "react"
 import Navbar from "./components/Navbar"
 import ResponsiveMenu from "./components/ResponsiveMenu"
 import Hero from "./components/Hero"
+import Menus from "./components/Menus"
 
 const App = () => {
   return (
@@ -9,7 +10,7 @@ const App = () => {
       <Navbar />
       <ResponsiveMenu />
       <Hero />
-      
+      <Menus/>
     </main>
   )
 }

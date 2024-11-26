@@ -1,4 +1,8 @@
 import React from "react"
+import Fruit1 from "../../assets/apple.png";
+import Fruit2 from "../../assets/orange.png";
+import Fruit3 from "../../assets/avocado.png";
+import Fruit4 from "../../assets/cherry.png";
 
 const MenusData = [
   {
@@ -29,7 +33,20 @@ const MenusData = [
 
 const Menus = () => {
   return (
-    <div>Menus</div>
+    <section>
+      <div className="container">
+        <h1 className="text-2xl font-bold text-left pb-10 uppercase">
+          Our Menu
+          </h1>
+          <div>
+            {MenusData.map((menu) => (
+              <div>
+                <img src={menu.link} alt="" />
+              </div>
+            ))}
+          </div>
+      </div>
+    </section>
   )
 }
 
