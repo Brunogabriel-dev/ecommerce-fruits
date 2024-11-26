@@ -1,4 +1,5 @@
 import React from "react"
+import { IoBagHandleOutline } from "react-icons/io5"
 
 const Hero = () => {
   return (
@@ -19,9 +20,23 @@ const Hero = () => {
               good health and mind Order now and get 20%
               off on your first order
               </p>
+              {/* Button section */}
+              <div className="flex justify-center md:justify-start">
+                <button className="primary-btn flex items-center gap-2">
+                  <span>
+                    <IoBagHandleOutline />
+                  </span>
+                  Order Now
+                </button>
+              </div>
           </div>
         </div>
-        {/* Brand Images */}
+        {/* Hero Images */}
+        <div>
+          <img src="" alt="" />
+        </div>
+
+
       </div>
     </section>
   )
