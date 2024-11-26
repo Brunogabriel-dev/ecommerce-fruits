@@ -1,10 +1,9 @@
-import React from "react"
-import { IoBagHandleOutline } from "react-icons/io5"
-import HeroPng from "../../assets/fruit-plate.png"
-import LeafPng from "../../assets/leaf.png"
-import { motion } from "framer-motion"
-import  { FadeRight }  from "./animation"
-
+import React from "react";
+import { IoBagHandleOutline } from "react-icons/io5";
+import HeroPng from "../../assets/fruit-plate.png";
+import LeafPng from "../../assets/leaf.png";
+import { motion } from "framer-motion";
+import { FadeRight } from "./animation";
 
 const Hero = () => {
   return (
@@ -55,7 +54,10 @@ const Hero = () => {
         </div>
         {/* Hero Images */}
         <div className="flex justify-center items-center">
-          <img 
+          <motion.img 
+          initial={{ opacity: 0, x: 200, rotate: 75 }}
+          animate={{ opacity: 1, x: 0, rotate: 0 }}
+          transition={{ duratuion: 1, delay: 0.2 }}
           src={HeroPng} 
           alt="" 
           className="w-[350px]

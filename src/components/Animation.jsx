@@ -9,11 +9,11 @@ export const FadeUp = (delay) => {
       y: 0,
       Transition: {
         duration: 1,
-        delay: delay
-      }
-    }
-  }
-}
+        delay: delay,
+      },
+    },
+  };
+};
 
 export const FadeLeft = (delay) => {
   return {
@@ -26,12 +26,11 @@ export const FadeLeft = (delay) => {
       x: 0,
       Transition: {
         duration: 1,
-        delay: delay
-      }
-    }
-  }
-}
-
+        delay: delay,
+      },
+    },
+  };
+};
 export const FadeRight = (delay) => {
   return {
     hidden: {
@@ -43,8 +42,8 @@ export const FadeRight = (delay) => {
       x: 0,
       Transition: {
         duration: 1,
-        delay: delay
-      }
-    }
-  }
-}
+        delay: delay,
+      },
+    },
+  };
+};
