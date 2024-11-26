@@ -19,8 +19,10 @@ const Hero = () => {
             className="text-5xl lg:text-6xl font-bold leading-relaxed xl:leading-loose font-averia">
               Healthy
             <br />
-              Fresh <span
-              className="text-secondary">Fruits!</span>
+              Fresh 
+              <span
+              className="text-secondary">Fruits!
+              </span>
               </motion.h1>
               <motion.p 
               variants={FadeRight(0.9)}
@@ -43,7 +45,7 @@ const Hero = () => {
               initial="hidden"
               animate="visible"
               className="flex justify-center md:justify-start">
-                <button className="primary-btn flex items-center gap-2">
+              <button className="primary-btn flex items-center gap-2">
                   <span>
                     <IoBagHandleOutline />
                   </span>
@@ -57,7 +59,7 @@ const Hero = () => {
           <motion.img 
           initial={{ opacity: 0, x: 200, rotate: 75 }}
           animate={{ opacity: 1, x: 0, rotate: 0 }}
-          transition={{ duratuion: 1, delay: 0.2 }}
+          transition={{ duration: 1, delay: 0.2 }}
           src={HeroPng} 
           alt="" 
           className="w-[350px]
@@ -65,7 +67,11 @@ const Hero = () => {
         </div>
         {/* Leaf Image */}
         <div className="absolute top-14 md:top-0 right-1/2 blur-sm opacity-80 rotate-[40deg]">
-          <img src={LeafPng} alt="" className="w-full md:max-w-[300px]"/>
+          <motion.img
+          initial={{ opacity: 0, y: -200, rotate: 75 }}
+          animate={{ opacity: 1, y: 0, rotate: 0 }}
+          transition={{ duration: 1, delay: 1.5 }}
+           src={LeafPng} alt="" className="w-full md:max-w-[300px]"/>
         </div>
       </div>
     </section>

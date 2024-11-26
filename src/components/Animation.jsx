@@ -1,3 +1,5 @@
+
+
 export const FadeUp = (delay) => {
   return {
     hidden: {
@@ -7,7 +9,7 @@ export const FadeUp = (delay) => {
     visible: {
       opacity: 1,
       y: 0,
-      Transition: {
+      transition: {
         duration: 1,
         delay: delay,
       },
@@ -24,7 +26,7 @@ export const FadeLeft = (delay) => {
     visible: {
       opacity: 1,
       x: 0,
-      Transition: {
+      transition: {
         duration: 1,
         delay: delay,
       },
@@ -40,7 +42,7 @@ export const FadeRight = (delay) => {
     visible: {
       opacity: 1,
       x: 0,
-      Transition: {
+      transition: {
         duration: 1,
         delay: delay,
       },
