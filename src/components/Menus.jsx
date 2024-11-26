@@ -9,25 +9,29 @@ const MenusData = [
     id: 1,
     title: "Fresh Red Apples",
     link: "/",
-    price: "$3.99"
+    price: "$3.99",
+    img: Fruit1,
   },
   {
     id: 1,
     title: "Fresh Oranges",
     link: "/",
-    price: "$4.99"
+    price: "$4.99",
+    img: Fruit2,
   },
   {
     id: 1,
     title: "Fresh Avocado",
     link: "/",
-    price: "$5.99"
+    price: "$5.99",
+    img: Fruit3,
   },
   {
     id: 1,
     title: "Fresh Cherries",
     link: "/",
-    price: "$2.99"
+    price: "$2.99",
+    img: Fruit4,
   }
 ]
 
@@ -38,10 +42,14 @@ const Menus = () => {
         <h1 className="text-2xl font-bold text-left pb-10 uppercase">
           Our Menu
           </h1>
-          <div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             {MenusData.map((menu) => (
               <div>
-                <img src={menu.link} alt="" />
+                <img src={menu.img} alt="" className="w-[60px] mb-4 scale-125 transform -translate-y-6" />
+                <div>
+                  <h1>{menu.title}</h1>
+                  <p>{menu.price}</p>
+                </div>
               </div>
             ))}
           </div>
