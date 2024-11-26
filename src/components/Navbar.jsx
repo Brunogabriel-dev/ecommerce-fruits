@@ -1,6 +1,7 @@
 import React from "react"
 import { FaLeaf } from "react-icons/fa";
 import { MdMenu, MdOutlineShoppingCart } from "react-icons/md";
+import ResponsiveMenu from "./ResponsiveMenu";
 
 const NavbarMenu = [
   {
@@ -28,10 +29,13 @@ const NavbarMenu = [
     title: "Contacts",
     link: "#",
   }
-]
+];
 
 const Navbar = () => {
+  const [open, setOpen] = React.useState(false);
+  
   return (
+    <>
     <nav>
     <div className="container flex justify-between items-center py-4 md:pt-4">
       {/* Logo section */}
@@ -55,13 +59,17 @@ const Navbar = () => {
         </button>
       </ul>
       </div>
-      {/* Mobile Hamburger Menu section*/}
+      {/* Mobile Hamburger Menu section */}
       <div className="md:hidden">
         <MdMenu className="text-4xl" />
       </div>
     </div>
     </nav>
-  )
-}
+
+    {/* Mobile Menu section */}
+    <ResponsiveMenu open={open}/>
+    </>
+  );
+};
 
 export default Navbar

@@ -1,8 +1,9 @@
-import React from 'react'
+import React from "react"
+import { motion, AnimatePresence } from "framer-motion"
 
 const ResponsiveMenu = () => {
   return (
-    <div>ResponsiveMenu</div>
+    <div></div>
   )
 }
 
