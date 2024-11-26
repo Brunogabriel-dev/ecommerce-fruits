@@ -16,7 +16,7 @@ const Banner = () => {
           viewport={{ once: true }}
           src={BannerPng} 
           alt="" 
-          className="w-[300px] md:max-w-[400px] h-full object-cover" />
+          className="w-[300px] md:max-w-[400px] h-full object-cover drop-shadow" />
         </div>
         {/*Brand Info*/}
         <div className="flex flex-col justify-center">
