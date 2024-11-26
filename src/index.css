@@ -9,3 +9,9 @@
     hover:!scale-110 duration-300;
   }
 }
+
+@layer utilities {
+  .drop-shadow {
+    filter: drop-shadow(-6px 8px 15px rgba(0,0,0,0.2));
+  }
+}

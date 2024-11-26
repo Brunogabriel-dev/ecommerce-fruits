@@ -1,5 +1,7 @@
 import React from "react"
 import { IoBagHandleOutline } from "react-icons/io5"
+import HeroPng from "../../assets/fruit-plate.png"
+import LeafPng from "../../assets/leaf.png"
 
 const Hero = () => {
   return (
@@ -32,8 +34,9 @@ const Hero = () => {
           </div>
         </div>
         {/* Hero Images */}
-        <div>
-          <img src="" alt="" />
+        <div className="flex justify-center items-center">
+          <img src={HeroPng} alt="" className="w-[350px]
+          md:w-[550px] drop-shadow"/>
         </div>
 
 
