@@ -7,12 +7,18 @@ const Hero = () => {
         {/* Brand Info */}
         <div className="flex flex-col justify-center py-14 md:py-0 relative z-10">
           <div className="text-center md:text-left space-y-6 lg:max-w-[400px]">
-            <h1 className="text-5xl lg:text-6xl font-bold leading-relaxed xl:leading-loose font-averia">Healthy</h1>
+            <h1 className="text-5xl lg:text-6xl font-bold leading-relaxed xl:leading-loose font-averia">
+              Healthy
             <br />
-            <h1>
               Fresh <span
-              className="text-secondary">Fruits!</span>{""}
-            </h1>
+              className="text-secondary">Fruits!</span>
+              </h1>
+              <p className="text-2xl tracking-wide">
+                Order Now For Fresh Healthy Life</p>
+              <p className="text-gray-400">Healthy and yummy food for fresh morning breakfast. Eat Daily for 
+              good health and mind Order now and get 20%
+              off on your first order
+              </p>
           </div>
         </div>
         {/* Brand Images */}
