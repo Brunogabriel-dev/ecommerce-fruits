@@ -37,7 +37,7 @@ const Banner2 = () => {
               animate="visible"
               className="flex justify-center md:justify-start">
               <button className="primary-btn"> 
-                  Learn More
+                  Download The App
                 </button>
               </motion.div>
           </div>
