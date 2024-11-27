@@ -8,6 +8,7 @@ const bgStyle = {
   backgroundPosition: "center",
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
+  backgroundAttachment: "fixed",
 }
 
 const Banner3 = () => {
